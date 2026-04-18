@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #121212;
+    color: white;
+}
+.main {
+    width: 100%;
+    padding: 30px;
+}
+.container1 {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0;
+}
+.image img {
+    height: 230px;
+    width: 230px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.song_name p {
+    color: #b3b3b3;
+    margin-bottom: 5px;
+}
+.song_name h1 {
+    font-size: 60px;
+    margin: 10px 0;
+    font-weight: 800;
+}
+.container2-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.icons i {
+    font-size: 40px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.icons i:first-child {
+    color: #1ed760; /* Spotify green play button */
+    font-size: 60px;
+}
+.list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+.list i {
+    font-size: 22px;
+}
+.container2-2 {
+    margin-top: 25px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #b3b3b3;
+    border-bottom: 1px solid #2b2b2b;
+    margin-bottom: 10px;
+}
+.container3 {
+    width: 100%;
+}
+.songs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+    border-radius: 5px;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+.songs:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.songlist {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.songlist span {
+    color: #b3b3b3;
+    width: 20px;
+}
+.detail p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.detail p:last-child {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+.songs > span {
+    color: #b3b3b3;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="container1">
+            <div class="image"><img src=".//Assets/card2img.jpeg" alt=""></div>
+            <div class="song_name">
+                <p>single</p>
+                <h1>Mahiye Jinna Sohna</h1>
+                <p><b>Darshan Raval</b><span>• 2023 • 1 songs, 3 min 1 sec</span></p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="container2-1">
+                <div class="icons">
+                    <i class="bi bi-play-circle-fill">
+                        <audio src="./songs/Mahiye Jinna Sohna Dard 320 Kbps.mp3" controls autoplay></audio>
+                    </i>
+                    <i class="bi bi-plus-circle"></i>
+                    <i class="bi bi-three-dots"></i>
+                </div>
+                <div class="list">
+                    <span>List</span>
+                    <i class="bi bi-list-ul"></i>
+                </div>
+            </div>
+            <br>
+            <div class="container2-2">
+                <div>#  Title</div>
+                <div>
+                    <i class="bi bi-clock"></i>
+                    <i class="bi bi-caret-down-fill"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="songs">
+                <div class="songlist">
+                    <span>1</span>
+                    <div class="detail">
+                        <p>Mahiye Jinna Sohna</p>
+                        <p>Darshan Raval</p>
+                    </div>
+                </div>
+                <span>5:50</span>
+            </div>
+            <!-- <div class="songs">
+                <div class="songlist">
+                    <span>2</span>
+                    <div class="detail">
+                        <p>Usey Kehna</p>
+                        <p>A.R. Rahman, Nitesh Aher, Jonita Gandhi, Irshad Kamil</p>
+                    </div>
+                </div>
+                <span>4:58</span>
+            </div>
+            <div class="songs">
+                <div class="songlist">
+                    <span>3</span>
+                    <div class="detail">
+                        <p>Aawaara Angaara</p>
+                        <p>A.R. Rahman, Faheem Abdullah, Irshad Kamil</p>
+                    </div>
+                </div>
+                <span>5:11</span>
+            </div>
+            <div class="songs">
+                <div class="songlist">
+                    <span>4</span>
+                    <div class="detail">
+                        <p>Deewaana Deewaana</p>
+                        <p>A.R. Rahman, Irshad Kamil</p>
+                    </div>
+                </div>
+                <span>5:37</span>
+            </div>
+            <div class="songs">
+                <div class="songlist">
+                    <span>5</span>
+                    <div class="detail">
+                        <p>Tere Zikr Mein</p>
+                        <p>A.R. Rahman, Shilpa Rao, Irshad Kamil</p>
+                    </div>
+                </div>
+                <span>3:31</span>
+            </div>
+        </div>
+    </div> -->
+    <div style="display: flex;justify-content:center;align-items: center;margin-top: 200px;">
+        <a href="Index.html" style="text-decoration: none;"><span style="background-color: white;color:red;padding: 20px;border:1px solid black;border-radius: 10px;">Back To Home</span></a>
+    </div>
+</body>
+</html>

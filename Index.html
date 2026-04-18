@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./Assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <!-- <a href="#">Search</a> -->
+                    <input type="search" placeholder="searsh" style="height: 35px; width: 200px;">
+                </div>
+            </div>
+            <div class="library">
+                <div class="option">
+                    <div class="library-option nav-option">
+                    <img src="./Assets/library_icon.png" alt="library_icon">
+                    <a href="#">Your library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+
+
+                    </div>
+                </div>
+                <div class="lib-boxes">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist </p>
+                        <p class="box-p2">It's easy,we'll help you</p>
+                        <button class="badge"> Create Playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcast to follow</p>
+                        <p class="box-p2">We'll keep you ubdated on new episode</p>
+                        <button class="badge">Browse Podcast </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                     <img src="./Assets/backward_icon.png" alt="backward-icon">
+                     <img src="./Assets/forward_icon.png" alt="forwward-icon" class="hide">
+                </div>
+                <div class="sticky-nav-option">
+                     <button class="badge nav-item hide">Explore Premium </button>
+                     <button class="badge nav-item dark-badge"><i class="fa-solid fa-circle-down" style="margin-right: 5px;"></i>Install app</button>
+                     <i class="fa-regular fa-user"></i>
+                </div>  
+            </div>
+
+            <h2>Recently played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./Assets/card1img.jpeg" class="card-image">
+                    <p class="card-title">Top 50-Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <a href="sanam.html"><img src="./Assets/recent.png" class="card-image"></a>
+                    <p class="card-title">Sanam Teri Kasam</p>
+                    <p class="card-info">Himesh Reshamiya,Sameer Anjaan,Subrat...</p>
+                </div>
+                <div class="card">
+                    <a href="Gehra.html"><img src="./Assets/recent1.png" class="card-image"></a>
+                    <p class="card-title">Gehra Hua</p>
+                    <p class="card-info">Shashwat sachdev,Arijit singh,Irshad kamil,...</p>
+                </div>
+            </div>
+            <h2>Trending Now Near You</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <a href="Mahiye.html"><img src="./Assets/card2img.jpeg" class="card-image"></a>
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Darshan Raval</p>
+                </div>
+                <div class="card">
+                    <a href="Mere_Paas.html"><img src="./Assets/card3img.jpeg" class="card-image"></a>
+                    <p class="card-title">Mere Paas Tum Ho</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <a href="Naa.html"><img src="./Assets/card4img.jpeg" class="card-image"></a>
+                    <p class="card-title">NAA Ready</p>
+                    <p class="card-info">Anirudh Ravichander,Vijay,Asal Koloar,Vishnu Edavan</p>
+                </div>
+                <div class="card">
+                    <a href="Barota.html"><img src="./Assets/treanding.png" class="card-image"></a>
+                    <p class="card-title">Barota</p>
+                    <p class="card-info">Sidhu Moose Wala,The kidd</p>
+                </div>
+                <div class="card">
+                    <a href="tere.html"><img src="./Assets/trenaing1.png" class="card-image"></a>
+                    <p class="card-title">Tera Ishk Mein</p>
+                    <p class="card-info">A.R Rahman, Faheen abdullah,Irshad kamil</p>
+                </div>
+            </div>
+            <h2>Popular artists</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./Assets/artist.png" class="card-image">
+                    <p class="card-title">A.R. Rahman</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/artist1.png" class="card-image">
+                    <p class="card-title">Mere Paas Tum Ho</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/artist2.png" class="card-image">
+                    <p class="card-title">NAA Ready</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/artist3.png" class="card-image">
+                    <p class="card-title">Barota</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/artist4.png" class="card-image">
+                    <p class="card-title">Tera Ishk Mein</p>
+                    <p class="card-info">Artist</p>
+                </div>
+            </div>
+             <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./Assets/card5img.jpeg" class="card-image">
+                    <p class="card-title">Top 50-Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/card6img.jpeg" class="card-image">
+                    <p class="card-title">Top 50-India</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/egypt-song.png" class="card-image">
+                    <p class="card-title">Top 50-Egypt</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/usa-song.png" class="card-image">
+                    <p class="card-title">Top 50-USA</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./Assets/australia-song.png" class="card-image">
+                    <p class="card-title">Top 50-Australia</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+    
+        </div>
+        <hr>
+    <div class="foot">
+        <div class="karan">
+            <div class="hero1">
+            <div></div>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i></div>
+        </div>
+        <div class="karan">
+            <div class="hero1">
+                <p>Company</p>
+            <span>About</span>
+            <span>Job</span>
+            <span>For the Record</span>
+            </div>
+        </div>
+        <div class="karan">
+            <div class="hero1">
+                <p>Communitt</p>
+            <span>For artist</span>
+            <span>Developers</span>
+            <span>Advertising</span>
+            <span>Investors</span></div>
+        </div>
+        <div class="karan">
+            <div class="hero1">
+                <p>Usefull Links</p>
+            <span>Support</span>
+            <span>Free mobile apps</span>
+            <span>Popular by country</span>
+            <span>Import your music</span>
+        </div>
+        </div>
+        <div class="karan">
+            <div class="hero1">
+                <p>Spotify Plan</p>
+            <span>Premium light</span>
+            <span>Premium standard</span>
+            <span>Premium student</span>
+            <span>Spotify Free</span>
+        </div>
+        </div>
+    </div>
+        <div class="footer">
+            <div class="line">
+                <p>© 2025 Spotify AB</p>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="./Assets/card3img.jpeg" class="song-img">
+                <div class="details">
+                    <p class="song-name">O're Piya</p>
+                    <a href="#" class="song-detail">Rahat Fateh Ali</a>
+                    <i class="fa-solid fa-circle-plus"></i></div>
+    
+            </div>
+             <div class="player">
+                <div class="player-controls">
+                    <img src="./Assets/player_icon1.png" class="player-control-icon">
+                    <img src="./Assets/player_icon2.png" class="player-control-icon">
+                    <img src="./Assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./Assets/player_icon4.png" class="player-control-icon">
+                    <img src="./Assets/player_icon5.png" class="player-control-icon">
+                </div> 
+                <div class="playback-bar">
+                <span class="curr-time">00:00</span>
+                <input type="range" min="0" max="100" class="progress-bar" step="1">
+                <span class="total-time">5:09</span> 
+                </div>  
+            </div>    
+            <div class="controls">
+                <div class="control-img-box">
+                <img src="./Assets/right_9666582.png"class="control-option" alt="logo">
+                <img src="./Assets/microphone-4-svgrepo-com.svg"class="control-option" alt="logo">
+                <img src="./Assets/queue-bold-svgrepo-com.svg" class="control-option">
+                <img src="./Assets/computer-speaker.png" class="control-option">
+                <img src="./Assets/volume-medium-930-svgrepo-com.svg" class="control-option">
+                <input type="range" max="100" min="0" step="10" class="volume-bar">
+                <img src="./Assets/mini-player.svg" class="control-option">
+                <img src="./Assets/full-screen-svgrepo-com.svg" class="control-option">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
